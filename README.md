@@ -60,7 +60,7 @@ product-service/
 ./mvnw spring-boot:run
 ```
 
-The application will start on `http://localhost:8080`
+The application will start on `http://localhost:8081`
 
 ## API Endpoints
 
@@ -75,31 +75,31 @@ The application will start on `http://localhost:8080`
 
 **Create Product**
 ```bash
-curl -X POST http://localhost:8080/api/products \
+curl -X POST http://localhost:8081/api/products \
   -H "Content-Type: application/json" \
   -d '{"name": "Laptop", "price": 999.99}'
 ```
 
 **Get All Products**
 ```bash
-curl http://localhost:8080/api/products
+curl http://localhost:8081/api/products
 ```
 
 **Get Product by ID**
 ```bash
-curl http://localhost:8080/api/products/1
+curl http://localhost:8081/api/products/1
 ```
 
 **Delete Product**
 ```bash
-curl -X DELETE http://localhost:8080/api/products/1
+curl -X DELETE http://localhost:8081/api/products/1
 ```
 
 ## Access H2 Console
 
 The H2 database console is enabled for development purposes.
 
-**URL**: http://localhost:8080/h2-console
+**URL**: http://localhost:8081/h2-console
 
 **JDBC URL**: jdbc:h2:mem:productdb
 
@@ -111,13 +111,13 @@ The H2 database console is enabled for development purposes.
 
 Swagger UI provides interactive API documentation.
 
-**URL**: http://localhost:8080/swagger-ui.html
+**URL**: http://localhost:8081/swagger-ui.html
 
 ## Access OpenAPI Documentation
 
 OpenAPI 3.0 JSON documentation is available at:
 
-**URL**: http://localhost:8080/v3/api-docs
+**URL**: http://localhost:8081/v3/api-docs
 
 ## Configuration
 
